@@ -1,0 +1,31 @@
+## PyFingerprint
+## Version: 1.0 (2014-03-18)
+##
+
+
+## Installation on Debian 7
+##
+
+
+## 1) Install PySerial:
+~# apt-get install python-serial
+
+## 2) Optional: Allow non-root user "username" using the serial port:
+~# usermod -a -G dialout username
+~# reboot
+
+## 3) Unpack PyFingerprint:
+~# tar xvzf '/path/to/PyFingerprint.tar.gz' -C /
+
+
+## Tests
+##
+
+## Enroll finger:
+~$ python2.7 /usr/lib/python2.7/dist-packages/PyFingerprint/example_enroll.py
+
+## Search enrolled finger:
+~$ python2.7 /usr/lib/python2.7/dist-packages/PyFingerprint/example_search.py
+
+## Delete finger:
+~$ python2.7 /usr/lib/python2.7/dist-packages/PyFingerprint/example_delete.py
