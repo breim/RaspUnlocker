@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :testes
+  
+
+  root 'testes#index'
+  
+  get 'ligar' => 'testes#ligar'
+  get 'desligar' => 'testes#ligar'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
