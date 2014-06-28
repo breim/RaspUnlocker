@@ -9,11 +9,13 @@ class TestesController < ApplicationController
 
 
   def ligar
+    system('gpio mode 0 out')
     system('gpio -g write 17 1')
   end
 
   def desligar
-   system('gpio -g write 17 0')
+    system('gpio mode 0 out')
+    system('gpio -g write 17 0')
   end
 
   # GET /testes/1
