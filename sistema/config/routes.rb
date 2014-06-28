@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   
 
   root 'testes#index'
-  
+
   get 'ligar' => 'testes#ligar'
-  get 'desligar' => 'testes#ligar'
+  get 'desligar' => 'testes#desligar'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
