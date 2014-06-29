@@ -1,23 +1,2 @@
-<h1>Listing testes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @testes.each do |testis| %>
-      <tr>
-        <td><%= link_to 'Show', testis %></td>
-        <td><%= link_to 'Edit', edit_testis_path(testis) %></td>
-        <td><%= link_to 'Destroy', testis, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-<center><%= link_to 'ligar',ligar_path %></center>
-<center><%= link_to 'Desligar',desligar_path %></center>
+<center><%= link_to 'Ligar',ligar_path,:class => "btn btn-success btn-lg btn-block" %></center><br>
+<center><%= link_to 'Desligar',desligar_path,:class => "btn btn-danger btn-lg btn-block" %></center>
