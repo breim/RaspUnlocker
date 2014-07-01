@@ -9,14 +9,14 @@ class TestesController < ApplicationController
 
 
   def ligar
-    #sudo apt-get install libsox-fmt-mp3
-    system('cd public && play ligar.mp3')
+    #sudo apt-get install mpg123
+    system('cd public && mpg123 -vC ligar.mp3')
     system('gpio mode 0 out')
     system('gpio -g write 17 1')
   end
 
   def desligar
-    system('cd public && play desligar.mp3')
+    system('cd public && mpg123 -vC desligar.mp3')
     system('gpio mode 0 out')
     system('gpio -g write 17 0')
   end
